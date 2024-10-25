@@ -540,6 +540,16 @@ section h1{
         transform: translateX(10%) translateY(105%);
     }
 
+    .span-input-container.journey{
+        width: 100%;
+        min-width: 350px;
+    }
+
+    .span-input-container.airline{
+        
+        justify-content: space-between;
+    }
+
     .specialreq-textarea{
         max-width: 300px;
     }
@@ -573,6 +583,11 @@ section h1{
     }
     .signin-and-register {
         transform: translateX(8%) translateY(105%);
+    }
+
+    .span-input-container.journey{
+        width: 100%;
+        min-width: 320px;
     }
 }
 
