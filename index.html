@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="form.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body class="container">
+
+    <header class="container-1">
+        <div class="logo">
+            <img src="Airpaz_Logo.png">
+        </div>
+        <div class="nav">
+            <div class="flight-and-hotel">
+                <div class="flight"><a href=""><u>Flight</u> </a></div>
+                <div class="hotel"><a href=""> <u>Hotel</u> </a></div>
+            </div>
+
+            <div class="signin-and-register">
+                <div class="signin"> <a href="https://www.airpaz.com/en/login">Sign in</a> </div>
+                <div class="register"> <a href="https://www.airpaz.com/en/signup">Register</a> </div>
+            </div>
+
+            <div class="ellipsis-for-signin-signup">
+                <svg id="edi" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                  </svg>
+            </div>
+        </div>
+    </header>
+
+    <div>
+ 
+    <main class="container-2">   
+        <div class="container-2-1">
+            <h1 id="title">
+                Start Booking Your Flight Now! <!--1-->
+            </h1>
+        </div>
+
+        <div class="container-2-2">
+            <p id="description">
+                Find countless flights options & deals to various destinations around the world <!--2-->
+            </p>
+        </div>
+
+        <div class="container-2-3"> 
+            <form id="survey-form">
+                <div class="personalInfo">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Juan" required>
+                    <br>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Dela Cruz" required>
+                    <br>
+                    <label for="email"> E-mail:</label>
+                    <input text="email" id="email" name="email" placeholder="e.g. example@gmail.com">
+                    <br>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input 
+                        type="text"
+                        id="phoneNumber"
+                        name="phonenumber"
+                        pattern="^\+?[0-9]+$"
+                        placeholder="09*********"
+                        minlength="10"
+                        maxlength="15"
+                        title="Please enter a valid philippine phone number."
+                        required
+                    >
+                    <br>
+                    <label for="country">Destination Country:</label>
+                        <select name="country" id="dropDown" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="australia">Australia</option>
+                            <option value="japan">Japan</option>
+                            <option value="korea">Korea</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="philippines">Philippines</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="taiwan">Taiwan</option>
+                        </select>
+                </div>
+                <br>
+                <div class="flights-available">
+                    <label class="label-container">JOURNEY</label>
+                    <div class="span-input-container">
+                        
+                        <span><input class="journey-input" type="radio" name="journey" value="oneway">One Way</input></span>
+                        <br>
+                        <span><input class="journey-input" type="radio" name="journey" value="roundtrip">Round Trip</input></span>
+                        <br>
+                        <span><input class="journey-input" type="radio" name="journey" value="multicity">Multi-city</input></span>
+                    </div>
+                    <br>
+                    <br>
+                    <label class="label-container" for="airline">Which AIRLINE do you want to fly with?</label>
+                    <div class="span-input-container airline">
+                        <span><input class="airline-input" type="checkbox" name="airline" value="philippineairline"> Philippine Airline</input></span>
+                        <span><input class="airline-input" type="checkbox" name="airline" value="cebupacific"> Cebu Pacific</input></span>
+                        <span><input class="airline-input" type="checkbox" name="airline" value="airaasia"> Air Asia</input></span>
+                        <span><input class="airline-input" type="checkbox" name="airline" value="airaasia"> Asiana Airlines</input></span>
+                        <span><input class="airline-input" type="checkbox" name="airline" value="airswift"> AirSWIFT</input></span>
+                    </div>
+                    <div class="specialrequest-field">
+                        <label class="label-container" for="specialrequest"> SPECIAL ASSISTANCE</label>
+                            <textarea class="specialreq-textarea" name="specialrequest" rows="5" cols="30" placeholder="e.g. Wheel Chair, Assisting Minor, People w/Disability"></textarea>
+                        <br>
+                    </div>
+                </div>
+                <div class="search-button-container">
+                <button type="submit">Search Flight</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <section>
+        <h1>Exclusive Flight Recommendations</h1>
+        <div class="spots">
+            <div class="kuala">
+                <a href="https://www.google.com/search?q=malaysia+tourist+spots&tbm=isch&ved=2ahUKEwj-x7u-muOEAxVm7TgGHRKNAKQQ2-cCegQIABAA&oq=malaysia+tourist+spots&gs_lp=EgNpbWciFm1hbGF5c2lhIHRvdXJpc3Qgc3BvdHMyBBAjGCcyBRAAGIAEMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgIGB4yBxAAGIAEGBgyBxAAGIAEGBgyBxAAGIAEGBgyBxAAGIAEGBhIwRZQghNYqBRwAHgAkAEAmAHTAqAB4wWqAQcwLjEuMS4xuAEDyAEA-AEBigILZ3dzLXdpei1pbWfCAgoQABiABBiKBRhDiAYB&sclient=img&ei=kkDqZf62LOba4-EPkpqCoAo&bih=1012&biw=2133" target="_blank">
+                    Kuala Lumpur
+                </a>
+            </div>
+            <div class="fuji" >
+                <a href="https://www.google.com/search?sca_esv=7fb4d62672696752&sxsrf=ACQVn09-v0o19NdCPQhaLeS5BhfYX4W0nA:1709846896071&q=japan&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjv-PCGjOOEAxXUbmwGHW4rAe4Q0pQJegQIDRAB&biw=2133&bih=1012&dpr=0.9#imgrc=McqoX5v81TLWWM&vwlns=WyIwQ0JRUWg2Y0dhaGNLRXdpUW1KcUxqT09FQXhVQUFBQUFIUUFBQUFBUUJBIl0=&lns=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIkVrY0tKR0ZqT0RjM1lqRmpMVEUwTnpNdE5HVTJPUzFoT1RSbUxUTmlPRGxpWkdJd09UTTNNeElmTUMxdE5VRkhZVGRrTTJkbGMwWldkMUYzZG5veE4wZFhXRXN5ZHpSU1p3PT0iXQ==" target="_blank">
+                    Mount Fuji
+                </a>
+            </div>
+            <div class="palawan">
+                <a href="https://www.google.com/search?q=palawan&tbm=isch&ved=2ahUKEwjZ-7aujeOEAxWizjgGHVfBDuMQ2-cCegQIABAA&oq=palawan&gs_lp=EgNpbWciB3BhbGF3YW4yBBAjGCcyChAAGIAEGIoFGEMyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi2BlCyAliXBHAAeACQAQCYAZ0DoAGTB6oBBzItMi4wLjG4AQPIAQD4AQGKAgtnd3Mtd2l6LWltZ4gGAQ&sclient=img&ei=zzLqZZnYGqKd4-EP14K7mA4&bih=1012&biw=2133#imgrc=T0dYU8pEWdiFiM" target="_blank">
+                    Palawan
+                </a>
+            </div>
+            <div class="sidney">
+                <a href="https://www.google.com/search?q=sidney+australia&tbm=isch&ved=2ahUKEwiHm9rqjeOEAxUg9zgGHS0KCQQQ2-cCegQIABAA&oq=sidney+au&gs_lp=EgNpbWciCXNpZG5leSBhdSoCCAAyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBRgeMgYQABgIGB4yBhAAGAgYHjIGEAAYCBgeMgYQABgIGB5IxxhQyQJY7BBwAHgAkAEAmAHbAaAB8QWqAQUwLjMuMbgBAcgBAPgBAYoCC2d3cy13aXotaW1nwgIEECMYJ8ICChAAGIAEGIoFGEOIBgE&sclient=img&ei=TTPqZcfAM6Du4-EPrZSkIA&bih=1012&biw=2133#imgrc=dKBL_Zf2F5y-NM" target="_blank">
+                    Sidney
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-3">
+        <div>
+            <div  class="class-1">
+                <img  class="phone" src="https://cdn.airpaz.com/cdn-cgi/image/w=625,h=485,f=webp/images/mockups/en.png" >
+                <div class="class-2">
+                    <h2>
+                        Download Lampaz app now,
+                        <br>
+                        book flight and hotel easier!
+                    </h2>
+                    <div class="class-3">
+                        <a href="" target="_blank">
+                            <img src="https://cdn.airpaz.com/cdn-cgi/image/w=155,h=45,f=webp/forerunner-next/img/playstore.svg" alt="Google Playstore" srcset="https://cdn.airpaz.com/cdn-cgi/image/w=155,h=45,f=webp/forerunner-next/img/playstore.svg 1x, https://cdn.airpaz.com/cdn-cgi/image/w=310,h=90,f=webp/forerunner-next/img/playstore.svg 2x">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="https://cdn.airpaz.com/cdn-cgi/image/w=155,h=45,f=webp/forerunner-next/img/appstore.svg" alt="App Store" srcset="https://cdn.airpaz.com/cdn-cgi/image/w=155,h=45,f=webp/forerunner-next/img/appstore.svg 1x, https://cdn.airpaz.com/cdn-cgi/image/w=310,h=90,f=webp/forerunner-next/img/appstore.svg 2x">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="forms.js"></script>
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <!-- <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
