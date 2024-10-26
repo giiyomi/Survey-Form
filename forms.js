@@ -6,28 +6,33 @@ const mediaQuery = window.matchMedia('(max-width: 550px)');
 console.log(window.getComputedStyle(svgEllipsisForSigninSignup).backgroundColor);
 
 ellipsisForSigninSignup.addEventListener('click', (event) => {
-    event.stopPropagation(); // Pigilan ang pag-propagate para hindi masama ang document click
-    console.log('yehey');
-    // Toggle display ng signinAndRegister
+    event.stopPropagation();
+
     signinAndRegister.style.display = signinAndRegister.style.display === 'flex' ? 'none' : 'flex';
 });
 
-document.addEventListener('click', (event) => {
-    // Check kung nasa labas ang click ng ellipsisForSigninSignup o signinAndRegister
-    if (!ellipsisForSigninSignup.contains(event.target) && !signinAndRegister.contains(event.target)) {
-        signinAndRegister.style.display = 'none';
-    }
-});
+// document.addEventListener('click', (event) => {
+//     // Check kung nasa labas ang click ng ellipsisForSigninSignup o signinAndRegister
+//     if (!ellipsisForSigninSignup.contains(event.target) && !signinAndRegister.contains(event.target)) {
+//         signinAndRegister.style.display = 'none';
+//     }
+// });
 
 function handleScreenChange(e) {
-    console.log('ewan');
     if (e.matches) {
+
+        console.log('owkay')
         if (signinAndRegister.style.display === 'flex') {
             signinAndRegister.style.display = 'none';
-            console.log(window.getComputedStyle(ellipsisForSigninSignup).backgroundColor);
         }
+
+        document.addEventListener('click', (event) => {
+            if (!ellipsisForSigninSignup.contains(event.target) && !signinAndRegister.contains(event.target)) {
+                signinAndRegister.style.display = 'none';
+            }
+        })
     } else {
-        console.log('Desktop view');
+        signinAndRegister.style.display = 'flex';
     }
 }
 
