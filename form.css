@@ -441,7 +441,7 @@ section h1{
     }
 
     .signin:hover, .register:hover{
-        background-color: #cc5500;
+        background-color: rgb(194, 82, 82);
         transition: background-color .3s;
     }
 
@@ -462,7 +462,7 @@ section h1{
     }
 
     .ellipsis-for-signin-signup:hover #edi{
-        background-color: #cc5500;
+        background-color: rgb(194, 82, 82);
         border-radius: 20px;
         transition: background-color .3s;
     }
